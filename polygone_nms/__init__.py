@@ -4,7 +4,7 @@ from polygone_nms.nms import nms
 
 
 def read_version():
-    version_file_path = os.path.join(os.path.dirname(__file__), "..", "VERSION")
+    version_file_path = os.path.join(os.path.dirname(__file__), os.pardir, "VERSION")
     with open(version_file_path, "r") as version_file:
         return version_file.read().strip()
 
